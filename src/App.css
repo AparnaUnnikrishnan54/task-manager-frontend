@@ -1,0 +1,142 @@
+/* task title */
+.task-title{
+    color:#142d59;
+    font-size: 1.15rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+/* edit button */
+.task-edit-btn{
+    color:#2878ff;
+    background: transparent;
+    border: none;
+    padding: 2px 4px;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+.task-edit-btn:hover{
+    color:#1458cf ;
+    background: #eef4ff;
+}
+
+/* task status badge */
+.status-badge{
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 15px;
+    border-radius: 30px;
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+.status-completed{
+    color: #ffffff;
+    background-color: #10b76b;
+}
+.status-progress{
+    color: #ffffff;
+    background-color: #2878ff;
+}
+.status-pending{
+    color: #040404;
+    background-color: #ffdf86;
+}
+
+/* priority and duedate*/
+.task-details{
+    color: #536783;
+    font-size: 0.94rem;
+}
+.task-detail strong {
+    color: #405575;
+    font-weight: 700;
+}
+.priority-high {
+    color: #ff454b;
+}
+.priority-medium {
+    color: #2878ff;
+    
+}
+.priority-low {
+    color: #e9a11b;
+}
+
+/* CARD FOOTER */
+.task-card-footer{
+    border-top: 1px solid #e6edf5;
+}
+/* delete button */
+.task-delete-btn{
+    color: #ff454b;
+    background: transparent;
+    border: none;
+    font-size: 1.15rem;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+.task-delete-btn:hover {
+    color: #d8202b;
+    background: #fff0f0;
+}
+
+/* task card styling */
+.task-card{
+    background-color: white;
+    border: 1px solid #dce5f2;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(25, 50, 85, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.task-card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(25, 50, 85, 0.09);
+}
+
+/* Page background */
+body {
+    background-color: #f4f7fc;
+}
+
+/* Keep the task section comfortably spaced */
+.task-page + .row {
+    margin-top: 24px !important;
+}
+
+/* task form page */
+
+/* Form labels */
+.task-label {
+    color: #405575;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+/* Form inputs and dropdowns */
+.task-input {
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid #dce5f2;
+}
+/* Input focus effect */
+.task-input:focus {
+    border-color: #2878ff;
+    box-shadow: 0 0 0 3px rgba(40, 120, 255, 0.12);
+}
+
+
+/* CALENDAR */
+/* Calendar date grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.calendar-day {
+  min-height: 75px;
+  padding: 12px 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
